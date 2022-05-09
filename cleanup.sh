@@ -4,8 +4,8 @@ export LC_CTYPE=C
 export LANG=C
 
 # Prepare variables
-NAME="${GITHUB_REPOSITORY##*/}"
-ACTOR=$(echo $GITHUB_ACTOR | tr '[:upper:]' '[:lower:]')
+NAME="test-tmp-intellij-plugin"
+ACTOR="jnoortheen"
 SAFE_NAME=$(echo $NAME | sed 's/[^a-zA-Z0-9]//g' | tr '[:upper:]' '[:lower:]')
 SAFE_ACTOR=$(echo $ACTOR | sed 's/[^a-zA-Z0-9]//g' | tr '[:upper:]' '[:lower:]')
 GROUP="com.github.$SAFE_ACTOR.$SAFE_NAME"
